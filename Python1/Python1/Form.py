@@ -11,6 +11,8 @@ class Handler:
       pixels = paint.histogram()
       return pixels   
    pixels = ConvertToPixel(image)
+   # def GetNumbers():
+   # def CompareNumbers(numbers,usernumbers):
 
 
 
