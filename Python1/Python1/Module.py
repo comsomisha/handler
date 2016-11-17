@@ -1,4 +1,8 @@
-﻿class Module(object):
-    """description of class"""
+﻿from Form import Handler
+class Module:
+    def GetPixels():
+     return Handler.pixels
+
+
 
 
