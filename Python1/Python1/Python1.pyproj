@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>76beca74-bfc0-40ae-ab62-ddb9ca8c3cc2</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Form.py</StartupFile>
+    <SearchPath>C:\Program Files (x86)\Python\Lib\site-packages\Pillow-3.4.2-py3.4-win32.egg</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Python1</Name>
+    <RootNamespace>Python1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="examples\" />
+    <Folder Include="numbers\" />
+    <Folder Include="numbers\0\" />
+    <Folder Include="numbers\1\" />
+    <Folder Include="numbers\2\" />
+    <Folder Include="numbers\3\" />
+    <Folder Include="numbers\4\" />
+    <Folder Include="numbers\5\" />
+    <Folder Include="numbers\6\" />
+    <Folder Include="numbers\7\" />
+    <Folder Include="numbers\8\" />
+    <Folder Include="numbers\9\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="examples\03612.gif" />
+    <Content Include="examples\08740.gif" />
+    <Content Include="examples\09651.gif" />
+    <Content Include="examples\18840.gif" />
+    <Content Include="examples\30380.gif" />
+    <Content Include="examples\51683.gif" />
+    <Content Include="examples\53361.gif" />
+    <Content Include="examples\55322.gif" />
+    <Content Include="examples\55824.gif" />
+    <Content Include="examples\62030.gif" />
+    <Content Include="examples\64039.gif" />
+    <Content Include="examples\67615.gif" />
+    <Content Include="examples\72581.gif" />
+    <Content Include="examples\76742.gif" />
+    <Content Include="examples\83913.gif" />
+    <Content Include="examples\90011.gif" />
+    <Content Include="numbers\0\5e11e68560ee3934a166ab8c3d839ec0.gif" />
+    <Content Include="numbers\0\a8485ec4708538e947eb35559d1f805b.gif" />
+    <Content Include="numbers\1\92461aaaf959ce074f38c67335fa3ac2.gif" />
+    <Content Include="numbers\1\9d7d6c9635a689b9ef7efa68239ebbbd.gif" />
+    <Content Include="numbers\1\a8201034c6c11dedadd47ac36098ac92.gif" />
+    <Content Include="numbers\2\15e9c21959ab260642d646514376b9e4.gif" />
+    <Content Include="numbers\2\2e3642357258f2ed2e13938df14c2bd6.gif" />
+    <Content Include="numbers\2\6840aadd5ad7399dc65f865cf37f76da.gif" />
+    <Content Include="numbers\3\243a0a35f68acc15b52f0467ce3fb6f8.gif" />
+    <Content Include="numbers\3\b1e3d5c2978d7cb8da1f6b9f3807766e.gif" />
+    <Content Include="numbers\3\fdb5d5b2a26d372a44052c0db900193f.gif" />
+    <Content Include="numbers\4\3a646d12eeb30b45afa60090c5b477fd.gif" />
+    <Content Include="numbers\4\6b0232684f8899e4f1c89a329b8b9644.gif" />
+    <Content Include="numbers\4\adba6edb36f7938b943e7fcc0ca15c3e.gif" />
+    <Content Include="numbers\5\35009d1f2a28ab720991419dccac6bd4.gif" />
+    <Content Include="numbers\5\ca47d52928a6f677652a0040b723d4e5.gif" />
+    <Content Include="numbers\5\d335cf3f7b1ddbda3108853fdbf6abf1.gif" />
+    <Content Include="numbers\6\ce8a456155f16f72913302554484312e.gif" />
+    <Content Include="numbers\6\e42c7854f99ce9a3a2b283167fc55413.gif" />
+    <Content Include="numbers\6\eef0185026fcd17f03b13f5747a74399.gif" />
+    <Content Include="numbers\7\7018355c856aeeb1574fc9fb4aa1d6d9.gif" />
+    <Content Include="numbers\7\944f5237fa9f20b31cac49f8758d4485.gif" />
+    <Content Include="numbers\7\bc549ed8972a5f34f7ff69c575093583.gif" />
+    <Content Include="numbers\8\83023956997f3259f8bcd7fdf572e47a.gif" />
+    <Content Include="numbers\8\8b8c62071cbe6878d07f292fe1264be9.gif" />
+    <Content Include="numbers\8\c47d86f5d5ebba9ce17041be2d7a9366.gif" />
+    <Content Include="numbers\9\78600b86803e1e185d2143b7e119942b.gif" />
+    <Content Include="numbers\9\bf3f011da7252edad4d2183f334bbfb2.gif" />
+    <Content Include="numbers\9\cba5dddd2bd5c682ebbd0eeea5c177ff.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form.py" />
+    <Compile Include="Module.py" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <Import Condition="Exists($(PtvsTargetsFile))" Project="$(PtvsTargetsFile)" />
+  <Import Condition="!Exists($(PtvsTargetsFile))" Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
