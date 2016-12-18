@@ -18,26 +18,34 @@ class Handler:
    def ConvertToPixels(self):
       from PIL import Image
       op = askopenfilename()
-      im = Image.open(op)
-      newim = Image.new("RGB",im.size)
-      newim.paste(im)
-      im2 = Image.new("P",im.size)
-      im = newim.convert("P")
+      try:
+       im = Image.open(op)
+       newim = Image.new("RGB",im.size)
+       newim.paste(im)
+       im2 = Image.new("P",im.size)
+       im = newim.convert("P")
 
-      temp = {}
+       temp = {}
 
-      for x in range(im.size[1]):
-       for y in range(im.size[0]):
+       for x in range(im.size[1]):
+        for y in range(im.size[0]):
          pix = im.getpixel((y,x))
          temp[pix] = pix
          if pix == 220 or pix == 225 or pix == 227: 
           im2.putpixel((y,x),255)
-      str1 = Module.SearchNumbers(im2)
-      self.Result.insert(1.0,str1)
-      Handler.CompareNumbers(self,op)
+       str1 = Module.SearchNumbers(im2)
+       self.Result.insert(1.0,str1)
+       Handler.CompareNumbers(self,op)
+      except AttributeError:
+       print('the file is not selected')
+      except OSError:
+       print('the wrong format')
    def CompareNumbers(self,op):
       x = int(self.Result.get(1.0,END))
-      y = int(self.Setting.get(1.0,END))
+      if self.Setting.get(1.0,END)!='\n':
+       y = int(self.Setting.get(1.0,END))
+      else:
+       y = ""
       if x!=y and  y!="":
        Module.ChangeSamples(op);
 root = Tk()              
