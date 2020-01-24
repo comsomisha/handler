@@ -1,0 +1,10 @@
+Основа для работы
+https://github.com/boyter/decodingcaptchas
+Все о TKinter
+http://www.russianlutheran.org/python/nardo/nardo.html
+Статья для декодирования цифр
+https://habr.com/ru/post/149091/
+Работа с Трелло
+https://trello.com/b/Tgd1wWeM/-
+Работа с Github
+https://github.com/comsomisha/handler
